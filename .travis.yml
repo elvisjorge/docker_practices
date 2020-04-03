@@ -6,4 +6,4 @@ before_install:
     - docker build -t elvisjorge/docker_activity -f Dockerfile.dev .
 
 script:
-    - dockker run elvisjorge/docker_activity npm run test -- --coverage
+    - docker run elvisjorge/docker_activity npm run test -- --coverage
